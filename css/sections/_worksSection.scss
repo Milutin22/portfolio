@@ -1,0 +1,123 @@
+.works {
+    padding: 0;
+    height: auto;
+    background-color: $primaryColorOne;
+    
+    &__box--yellow {
+        height: 20vh;
+        background-color: $primaryColorTwo;
+        div {
+            height: 100%;
+        }
+    }
+    &__heading {
+        margin: 0;
+        color: $primaryColorOne;
+    }
+    &__project {
+        a, a:hover {
+            color: $primaryColorOne;
+        }
+        height: 350px;
+        border-radius: 20px;
+        &--pic {
+            position: relative;
+            border-radius: 20px;
+            height: 80%;
+            width: 100%;
+            background:center no-repeat;
+            background-size: cover;
+            cursor: pointer;
+            &:hover .works__project--arrowRight {
+                filter: opacity(1);
+                transition: all 0.6s;
+
+            }
+            &Overlay {
+                height: 100%;
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+                border-radius: 20px;
+                filter: opacity(0);
+                transition: all 0.6s;
+                &:hover {
+                    filter: opacity(0.5);
+                }
+            }
+        }
+        &--arrowRight {
+            position: absolute;
+            font-size: 3rem;
+            filter: opacity(0);
+            right: 0;
+            top: 0;
+        }
+        &--name {
+            color: rgb(255, 255, 255);
+            letter-spacing: 0.1rem;
+            font-size: 2rem;
+            h3 {
+            font-size: 2rem;
+            font-weight: 500;
+            }
+        }
+        &--icons {
+            a {
+                color: $secondaryColorOne;
+                &:hover {
+                    color: $secondaryColorOne-hover;
+                }
+            }
+            i {
+                cursor: pointer;
+                &.none {
+                    cursor: not-allowed;
+                    color: $secondaryColorOne;
+                }
+            }
+        }
+        hr {
+            border-color: rgb(255, 255, 255);
+        }
+    }
+    #dental {
+        .works__project--pic {
+            background-image: url(../img/dental/01.png);
+        }
+    }    
+    #paintball {
+        div {
+        letter-spacing: 0;
+        }
+        .works__project--pic {
+            background-image: url(../img/paintball/01.png);
+        }
+    }
+    #cigar {
+        .works__project--pic {
+            background-image: url(../img/cigar/01.png);
+        }
+    }
+    #race {
+        .works__project--pic {
+            background-image: url(../img/race/01.png);
+        }
+    }
+    #thisPortfolio {
+        .works__project--pic {
+            background-image: url(../img/thisPortfolio/01.png);
+        }
+    }
+    #bucket {
+        .works__project--pic {
+            background-image: url(../img/bucket/01.png);
+        }
+    }
+
+    
+    &__line {
+        height: 15px;
+        background-color: $primaryColorTwo;
+        margin-top: 130px;
+    }
+}

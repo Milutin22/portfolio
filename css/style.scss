@@ -1,0 +1,59 @@
+@import 'layout/navigation';
+@import 'core/reset';
+
+html {
+    scroll-behavior: smooth;
+    width: auto!important;
+    overflow-x: hidden!important;
+}
+body {
+    font-family: $primaryFont;
+    width: auto!important;
+    overflow-x: hidden!important;
+}
+h1 {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+
+//----------HOME--------------
+@import 'sections/homeSection';
+
+
+//----------ABOUT-------------
+@import 'sections/aboutSection';
+
+
+//----------SERVICES----------
+@import 'sections/servicesSection';
+
+
+//----------WORKS-------------
+@import 'sections/worksSection';
+
+
+//-----PROJECTS OVERVIEW------
+@import 'sections/projectsOverview';
+
+
+//----------CONTACT-----------
+
+@import 'sections/contactSection';
+
+
+//----------FOOTER------------
+
+@import 'layout/footer';
+
+
+//-----ANIMATIONS FOR JS------
+
+@import 'core/animations';
+
+
+
+
+// MEDIA QUERIES-----------------------------------------------------
+
+@import 'layout/mediaQueries';

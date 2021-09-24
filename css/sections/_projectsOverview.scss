@@ -1,0 +1,133 @@
+#goUp i {
+    font-size: 3.5rem;
+}
+.overviewBody {
+    background-color: $primaryColorOne;
+    h1 {
+        color: rgb(255, 255, 255);
+        transform: translate(-4px,0);
+    }
+    i {
+        color: $primaryColorTwo;
+        font-size: 3rem;
+        cursor: pointer;
+        &.none {
+            cursor: not-allowed;
+            &:hover {
+                color: $primaryColorTwo!important;
+            }
+        }
+        &:hover {
+            color: $primaryColorTwo-hover!important;
+        }
+    }
+    
+    
+    .overview {
+        margin-top: 15vh;
+        &__backBtn {
+            position: absolute;
+            left: 20px;
+            transform: translate(0, -70px);
+        }
+        &__divider {
+            border: 1px solid rgb(255, 255, 255);
+            width: 300px;
+        }
+        &__descriptions {
+            h3 {
+                color: $secondaryColorOne;
+            }
+            p {
+                color: rgb(255, 255, 255);
+            }
+        }
+        &__images {
+                height: 500px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                //DENTAL PICS
+                &--dentalFirst {
+                    background-image: url(../img/dental/01.png);
+            }
+                &--dentalSecond {
+                    background-image: url(../img/dental/02.png);
+            }
+                &--dentalThird {
+                    background-image: url(../img/dental/03.png);
+            }
+                &--dentalFourth {
+                    background-image: url(../img/dental/04.png);
+            }
+                //PAINTBALL PICS
+                &--paintballFirst {
+                    background-image: url(../img/paintball/01.png);
+            }
+                &--paintballSecond {
+                    background-image: url(../img/paintball/02.png);
+            }
+                &--paintballThird {
+                    background-image: url(../img/paintball/03.png);
+            }
+                &--paintballFourth {
+                    background-image: url(../img/paintball/04.png);
+            }
+            //CIGAR PICS
+                &--cigarFirst {
+                    background-image: url(../img/cigar/01.png);
+            }
+                &--cigarSecond {
+                    background-image: url(../img/cigar/02.png);
+            }
+                &--cigarThird {
+                    background-image: url(../img/cigar/03.png);
+            }
+                &--cigarFourth {
+                    background-image: url(../img/cigar/04.png);
+            }
+            //RACE GAME PICS
+                &--raceFirst {
+                    background-image: url(../img/race/01.png);
+            }
+                &--raceSecond {
+                    background-image: url(../img/race/02.png);
+            }
+                &--raceThird {
+                    background-image: url(../img/race/03.png);
+            }
+                &--raceFourth {
+                    background-image: url(../img/race/04.png);
+            }
+            //PORTFOLIO GAME PICS
+                &--portfolioFirst {
+                    background-image: url(../img/thisPortfolio/01.png);
+            }
+                &--portfolioSecond {
+                    background-image: url(../img/thisPortfolio/02.png);
+                    filter: contrast(103%);
+            }
+                &--portfolioThird {
+                    background-image: url(../img/thisPortfolio/03.png);
+                    filter: contrast(103%);
+            }
+                &--portfolioFourth {
+                    background-image: url(../img/thisPortfolio/04.png);
+                    filter: contrast(103%);
+            }
+            //BUCKETLIST PICS
+                &--bucketlistFirst {
+                    background-image: url(../img/bucket/01.png);
+            }
+                &--bucketlistSecond {
+                    background-image: url(../img/bucket/02.png);
+            }
+                &--bucketlistThird {
+                    background-image: url(../img/bucket/03.png);
+            }
+                &--bucketlistFourth {
+                    background-image: url(../img/bucket/04.png);
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@import '../core/base';
+
+.nav {
+    background-color: $primaryColorTwo;
+    &__logo {
+        height: 60px;
+        width: 60px;
+        background-image: url(../img/logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    &__link {
+        font-size: 1.2rem;
+        margin-left: 30px;
+        font-weight: bold;
+        color: $primaryColorOne;
+        &:hover {
+            color: $secondaryColorOne ;
+        }
+        &--contact {
+            background-color: $primaryColorTwo;
+            font-size: 1.2rem;
+            color: $primaryColorOne;
+            border: 3px solid $primaryColorOne;
+            border-radius: 50px;
+            &:hover {
+                background-color: $primaryColorOne;
+                border: 3px solid $primaryColorOne;
+                color: $primaryColorTwo;
+            }
+            &:active {
+                background-color: $primaryColorOne!important;
+                border-color: $primaryColorOne!important;
+                color: $primaryColorTwo!important;
+            }
+            &:focus {
+                box-shadow: 0 0 0 transparent!important;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.contact {
+    height: auto;
+    background-color: $primaryColorOne;
+    &__heading {
+        color: $primaryColorTwo;
+    }
+    &__form {
+        overflow: hidden;
+        input, textarea {
+            background-color: transparent;
+            font-size: 1.5rem;
+            color: $secondaryColorTwo;
+            border: none;
+            border-bottom: rgb(255, 255, 255) 1px solid;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+        }
+    }
+    &__sendButton {
+        border: $secondaryColorTwo 2px solid;
+        border-radius: 20px;
+        background-color: transparent;
+        color: $secondaryColorTwo;
+        height: 40px;
+        width: 100px;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+            background-color: $secondaryColorTwo;
+            color: $primaryColorOne;
+        }
+    }
+    &__info {
+        color: rgb(255, 255, 255);
+        font-size: 1.4rem;
+        & > div {
+            height: 100%;
+            i {
+                color: $primaryColorTwo;
+                font-size: 2rem;
+            }
+        }
+    }
+}

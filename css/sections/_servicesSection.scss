@@ -1,0 +1,35 @@
+.services {
+    height: 100vh;
+    background-color: $primaryColorOne;
+    &__heading {
+        color: rgb(255, 255, 255);
+    }
+    &__container {
+        transform: translate(0, 0vh); 
+    }
+    &__card {
+        background-color: $secondaryColorThree;
+        color:rgb(255, 255, 255);
+        border-radius: 20px;
+    }
+    &__divider--horizontal {
+        border-color: rgb(255, 255, 255);
+    }
+    &__icon {
+        color: $secondaryColorOne;
+    }
+    &__button {
+        background-color: transparent;
+        border: 3px solid $secondaryColorTwo;
+        border-radius: 50px;
+        color: rgb(255, 255, 255);
+        font-size: 1.3em;
+        &:hover {
+            background-color: $secondaryColorTwo;
+            color: $primaryColorOne;
+        }
+        &:focus {
+            box-shadow: 0 0 0 transparent!important;
+        }
+    }
+}
