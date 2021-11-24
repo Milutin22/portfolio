@@ -147,3 +147,14 @@
         }
     }
 }
+
+@media (max-width: 400px) {
+    // CONTACT SECTION
+    .contact {
+        &__info {
+            &--email {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}

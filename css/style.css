@@ -916,4 +916,10 @@ h1 {
     height: 200px !important;
   }
 }
+
+@media (max-width: 400px) {
+  .contact__info--email {
+    font-size: 0.7rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
