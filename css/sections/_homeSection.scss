@@ -16,6 +16,22 @@
     }
 }
 
+.loader {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 99;
+}
+
+.fadeOut {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    100% {opacity: 0; visibility: hidden;}
+}
+
 .home {
     background-color: $primaryColorOne;
     height: 100vh; 
