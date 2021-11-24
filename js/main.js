@@ -1,9 +1,14 @@
 const app = {
     init: () => {
-        document.addEventListener('DOMContentLoaded', app.load);
+        window.addEventListener('load', app.loadAll);
+        document.addEventListener('DOMContentLoaded', app.loadContent);
     },
-    load: () => {
+    loadContent: () => {
         app.getData();
+    },
+    loadAll: () => {
+        let loader = document.getElementsByClassName('loader')[0];
+        loader.classList.add('fadeOut');
     },
     getData: () => {
         let page = document.body.id;
